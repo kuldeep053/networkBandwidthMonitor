@@ -1,0 +1,26 @@
+{
+  "name": "networkBandwidthMonitor",
+  "version": "1.0.1",
+  "description": "Utility to monitor network bandwidth",
+  "main": "./lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha --ui tdd"
+  },
+  "directories": {
+    "lib": "./lib"
+  },
+  "dependencies": {
+    "moment": "2.22.2",
+    "async": "2.6.1",
+    "fs-extra": "7.0.0"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  },
+  "readmeFilename": "README.md"
+}
