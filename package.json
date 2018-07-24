@@ -1,11 +1,11 @@
 {
-  "name": "networkBandwidthMonitor",
+  "name": "networkbandwidthmonitor",
   "version": "1.0.1",
   "description": "Utility to monitor network bandwidth",
   "main": "./lib/index.js",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/kuldeep053/networkBandwidthMonitor.git"
   },
   "scripts": {
     "test": "node_modules/.bin/mocha --ui tdd"

@@ -7,8 +7,8 @@ describe('Network bandwidth monitor test', function() {
 			setTimeout(function() {
 				networkBandwidthMonitor.stop(function(data) {
 					should.exist(data);
-					uploadThroughput = parseFloat(data.uploadThroughput);
-					downloadThroughput = parseFloat(data.downloadThroughput);
+					var uploadThroughput = parseFloat(data.uploadThroughput);
+					var downloadThroughput = parseFloat(data.downloadThroughput);
 					console.log('uploadThroughput: ' + uploadThroughput + ' '
 							+ data.units);
 					console.log('downloadThroughput: ' + downloadThroughput
@@ -16,8 +16,8 @@ describe('Network bandwidth monitor test', function() {
 					should.exist(uploadThroughput);
 					should.exist(downloadThroughput);
 					done();
-				})
-			}, 5000)
-		})
-	})
-})
+				});
+			}, 5000);
+		});
+	});
+});
